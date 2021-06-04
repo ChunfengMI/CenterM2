@@ -112,7 +112,8 @@ You can add `--debug 2` to visualize the heatmap outputs.
 ## Benchmark Evaluation and Training
 
 First, download the pretrained weights for darknet:
-[darktiny](https://drive.google.com/file/d/16q68-Sb5-92J6RYtUD3p31PfkOceRwRe/view?usp=sharing)
+
+[darktiny](https://drive.google.com/file/d/16q68-Sb5-92J6RYtUD3p31PfkOceRwRe/view?usp=sharing) and
 [cspdarknet53](https://drive.google.com/file/d/12UBYMg8gVTmCtAjWClina_r3LwnrrzA2/view?usp=sharing)
 
 For training on a single GPU, run

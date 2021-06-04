@@ -27,9 +27,6 @@ on the regions of interest between low-level and high-level feature maps. On the
 |  ResNet-101  | 82.0      |    12        |        83.8 / 2       |[res101_sac_voc_82.0](https://drive.google.com/file/d/1puoogUsKXoxtf2qyb8eLkOg8KzDGClVT/view?usp=sharing) |
 | CSPDarknet-53| 85.5      |    27        |        86.0 / 4       |[csp53_voc_85.5](https://drive.google.com/file/d/16q68-Sb5-92J6RYtUD3p31PfkOceRwRe/view?usp=sharing) |
 
-
-All models and details are available in our [Model zoo](readme/MODEL_ZOO.md).
-
 ## Installation
 
 0. [Optional but recommended] create a new conda environment. 
@@ -113,6 +110,10 @@ You can add `--debug 2` to visualize the heatmap outputs.
 
 
 ## Benchmark Evaluation and Training
+
+First, download the pretrained weights for darknet:
+[darktiny](https://drive.google.com/file/d/16q68-Sb5-92J6RYtUD3p31PfkOceRwRe/view?usp=sharing)
+[cspdarknet53](https://drive.google.com/file/d/12UBYMg8gVTmCtAjWClina_r3LwnrrzA2/view?usp=sharing)
 
 For training on a single GPU, run
 ~~~ 

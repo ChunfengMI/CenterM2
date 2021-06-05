@@ -11,7 +11,7 @@ on the regions of interest between low-level and high-level feature maps. On the
 
 | Backbone     |  AP / FPS |  Multi-scale AP / FPS |                                           Download                                                  | 
 |--------------|-----------|-----------------------|-----------------------------------------------------------------------------------------------------|
-|ResNet-18     | 33.6 / 26 |          -            |[res18_sac_coco](https://drive.google.com/file/d/1Hwp0iJuysWCEhm_Jt1JrMbQoKIe4QNtA/view?usp=sharing) |
+|ResNet-18     | 33.6 / 26 |           -           |[res18_sac_coco](https://drive.google.com/file/d/1Hwp0iJuysWCEhm_Jt1JrMbQoKIe4QNtA/view?usp=sharing) |
 |ResNet-101    | 40.5 / 11 |        44.8 / 2       |[res101_sac_coco](https://drive.google.com/file/d/16kzI1UakIBGNX0db8VUnxAKXljGZz1UG/view?usp=sharing)|
 |CSPDarknet-53 | 42.6 / 24 |        45.6 / 4       |[csp53_coco_val](https://drive.google.com/file/d/1aWD8CsE7mZ215NnvOozAHwi_8mPkvIRU/view?usp=sharing) |
 
@@ -19,9 +19,9 @@ on the regions of interest between low-level and high-level feature maps. On the
 
 | Backbone     |  mAP      |    FPS       | Multi-scale mAP / FPS |                                  Download                                          |
 |--------------|-----------|--------------|-----------------------|-----------------------------------------------------------------------------------------------------                 |
-| Darknet-Tiny | 73.3      |    71        |         -             |[darktiny_voc_73.3](https://drive.google.com/file/d/1qvn4EpXO7-FtjhOQO-gUEdx7_t47myBk/view?usp=sharing) |
-|  ResNet-18   | 78.4      |    32        |         -             |[res18_sac_voc_78.4](https://drive.google.com/file/d/1puoogUsKXoxtf2qyb8eLkOg8KzDGClVT/view?usp=sharing) |
-|    DLA-34    | 81.7      |    27        |         -             |[dla34_sac_voc_81.7](https://drive.google.com/file/d/15f9tHGGXbTdq8F6l7_t1UNw9QReQwV_U/view?usp=sharing) |
+| Darknet-Tiny | 73.3      |    71        |           -           |[darktiny_voc_73.3](https://drive.google.com/file/d/1qvn4EpXO7-FtjhOQO-gUEdx7_t47myBk/view?usp=sharing) |
+|  ResNet-18   | 78.4      |    32        |           -           |[res18_sac_voc_78.4](https://drive.google.com/file/d/1puoogUsKXoxtf2qyb8eLkOg8KzDGClVT/view?usp=sharing) |
+|    DLA-34    | 81.7      |    27        |           -           |[dla34_sac_voc_81.7](https://drive.google.com/file/d/15f9tHGGXbTdq8F6l7_t1UNw9QReQwV_U/view?usp=sharing) |
 |  Darknet-53  | 81.6      |    31        |        83.4 / 4       |[dark53_voc_81.6](https://drive.google.com/file/d/1nC1eUmu6VZyeQUmufXfQM3nntn2VbJLC/view?usp=sharing) |
 |  ResNet-101  | 82.0      |    12        |        83.8 / 2       |[res101_sac_voc_82.0](https://drive.google.com/file/d/1puoogUsKXoxtf2qyb8eLkOg8KzDGClVT/view?usp=sharing) |
 | CSPDarknet-53| 85.5      |    27        |        86.0 / 4       |[csp53_voc_85.5](https://drive.google.com/file/d/16q68-Sb5-92J6RYtUD3p31PfkOceRwRe/view?usp=sharing) |
@@ -39,10 +39,10 @@ on the regions of interest between low-level and high-level feature maps. On the
     conda activate CenterM2
     ~~~
 
-1. Install pytorch1.3.1:
+1. Install pytorch1.3.0:
 
     ~~~
-    conda install pytorch=1.3.1 torchvision -c pytorch
+    conda install pytorch=1.3.0 torchvision -c pytorch
     ~~~
      
 2. Install [COCOAPI](https://github.com/cocodataset/cocoapi):

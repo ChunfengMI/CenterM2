@@ -12,7 +12,6 @@ on the regions of interest between low-level and high-level feature maps. On the
 | Backbone     |  AP / FPS |  Multi-scale AP / FPS |                                           Download                                                  | 
 |--------------|-----------|-----------------------|-----------------------------------------------------------------------------------------------------|
 |ResNet-18     | 33.6 / 26 |          -            |[res18_sac_coco](https://drive.google.com/file/d/1Hwp0iJuysWCEhm_Jt1JrMbQoKIe4QNtA/view?usp=sharing) |
-|Darknet-53    | 40.5 / 11 |        44.8 / 2       |                                                                                                     |
 |ResNet-101    | 40.5 / 11 |        44.8 / 2       |[res101_sac_coco](https://drive.google.com/file/d/16kzI1UakIBGNX0db8VUnxAKXljGZz1UG/view?usp=sharing)|
 |CSPDarknet-53 | 42.6 / 24 |        45.6 / 4       |[csp53_coco_val](https://drive.google.com/file/d/1aWD8CsE7mZ215NnvOozAHwi_8mPkvIRU/view?usp=sharing) |
 

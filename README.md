@@ -86,7 +86,7 @@ on the regions of interest between low-level and high-level feature maps. On the
 
 7. Download pertained models for detection and move them to `$CenterM2_ROOT/models/`.
 
-## Use CenterM2
+## Use CenterM2 (Code based on [CenterNet](https://github.com/xingyizhou/CenterNet)
 
 We support demo for image/ image folder, video, and webcam. 
 

@@ -143,7 +143,7 @@ If you want to reproduce the results in the paper for benchmark evaluation and t
   The `VOCdevkit` folder is needed to run the evaluation script from [faster rcnn](https://github.com/rbgirshick/py-faster-rcnn/blob/master/tools/reval.py).
 
 
-## Use CenterM2 (Please refer to [CenterNet](https://github.com/xingyizhou/CenterNet) for more detailed instructions.)
+## Use CenterM2 (refer to [CenterNet](https://github.com/xingyizhou/CenterNet) for more detailed instructions)
 
 We support demo for image/ image folder, video, and webcam. 
 

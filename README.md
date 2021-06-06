@@ -86,6 +86,63 @@ on the regions of interest between low-level and high-level feature maps. On the
 
 7. Download pertained models for detection and move them to `$CenterM2_ROOT/models/`.
 
+## Dataset preparation
+
+If you want to reproduce the results in the paper for benchmark evaluation and training, you will need to setup dataset.
+
+### COCO
+- Download the images (2017 Train, 2017 Val, 2017 Test) from [coco website](http://cocodataset.org/#download).
+- Download annotation files (2017 train/val and test image info) from [coco website](http://cocodataset.org/#download). 
+- Place the data (or create symlinks) to make the data folder like:
+
+  ~~~
+  ${CenterM2_ROOT}
+  |-- data
+  `-- |-- coco
+      `-- |-- annotations
+          |   |-- instances_train2017.json
+          |   |-- instances_val2017.json
+          |   |-- person_keypoints_train2017.json
+          |   |-- person_keypoints_val2017.json
+          |   |-- image_info_test-dev2017.json
+          |---|-- train2017
+          |---|-- val2017
+          `---|-- test2017
+  ~~~
+ 
+
+### Pascal VOC
+
+- Run
+
+    ~~~
+    cd $CenterM2_ROOT/tools/
+    bash get_pascal_voc.sh
+    ~~~
+- The above script includes:
+    - Download, unzip, and move Pascal VOC images from the [VOC website](http://host.robots.ox.ac.uk/pascal/VOC/). 
+    - [Download](https://storage.googleapis.com/coco-dataset/external/PASCAL_VOC.zip) Pascal VOC annotation in COCO format (from [Detectron](https://github.com/facebookresearch/Detectron/tree/master/detectron/datasets/data)). 
+    - Combine train/val 2007/2012 annotation files into a single json. 
+
+
+- Move the created `voc` folder to `data` (or create symlinks) to make the data folder like:
+
+  ~~~
+  ${CenterM2_ROOT}
+  |-- data
+  `-- |-- voc
+      `-- |-- annotations
+          |   |-- pascal_trainval0712.json
+          |   |-- pascal_test2017.json
+          |-- images
+          |   |-- 000001.jpg
+          |   ......
+          `-- VOCdevkit
+  
+  ~~~
+  The `VOCdevkit` folder is needed to run the evaluation script from [faster rcnn](https://github.com/rbgirshick/py-faster-rcnn/blob/master/tools/reval.py).
+
+
 ## Use CenterM2 (Code based on [CenterNet](https://github.com/xingyizhou/CenterNet))
 
 We support demo for image/ image folder, video, and webcam. 

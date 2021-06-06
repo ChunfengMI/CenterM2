@@ -114,7 +114,7 @@ You can add `--debug 2` to visualize the heatmap outputs.
 First, download the pretrained weights for darknet:
 
 [darktiny](https://drive.google.com/file/d/16q68-Sb5-92J6RYtUD3p31PfkOceRwRe/view?usp=sharing),
-[darknet53](https://drive.google.com/file/d/1y6sVUX0i9ZS3qhDl1vjemC9T-jMLncLG/view?usp=sharing)--[https://zhuanlan.zhihu.com/p/105278156](https://zhuanlan.zhihu.com/p/105278156), and
+[darknet53](https://drive.google.com/file/d/1y6sVUX0i9ZS3qhDl1vjemC9T-jMLncLG/view?usp=sharing)--[Kissrabbit](https://zhuanlan.zhihu.com/p/105278156), and
 [cspdarknet53](https://drive.google.com/file/d/12UBYMg8gVTmCtAjWClina_r3LwnrrzA2/view?usp=sharing)--[Tianxiaomo](https://github.com/Tianxiaomo/pytorch-YOLOv4)
 
 For training on a single GPU, run

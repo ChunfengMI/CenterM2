@@ -105,7 +105,7 @@ For webcam demo, run
 python demo.py ctdet --demo webcam --load_model ../models/csp53_coco_val.pth
 ~~~
 
-You can add `--flip_test` for flip test.
+You can add `--flip_test` and `--nms` for flip test.
 You can add `--debug 2` to visualize the heatmap outputs.
 
 

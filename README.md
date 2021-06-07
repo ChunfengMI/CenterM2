@@ -91,7 +91,8 @@ on the regions of interest between low-level and high-level feature maps. On the
 
 We support demo for image/ image folder, video, and webcam. 
 
-First, download the models (By default, [csp53_coco_val](https://drive.google.com/file/d/1aWD8CsE7mZ215NnvOozAHwi_8mPkvIRU/view?usp=sharing) for detection and put them in `CenterM2_ROOT/models/`.
+First, download the models (By default, [csp53_coco_val](https://drive.google.com/file/d/1aWD8CsE7mZ215NnvOozAHwi_8mPkvIRU/view?usp=sharing) and [cspdarknet53](https://drive.google.com/file/d/12UBYMg8gVTmCtAjWClina_r3LwnrrzA2/view?usp=sharing)--[Tianxiaomo](https://github.com/Tianxiaomo/pytorch-YOLOv4)
+for detection and put them in `CenterM2_ROOT/models/`.
 
 For object detection on images/ video, run:
 

@@ -86,6 +86,30 @@ on the regions of interest between low-level and high-level feature maps. On the
 
 7. Download pertained models for detection and move them to `$CenterM2_ROOT/models/`.
 
+
+## Use CenterM2 (refer to [CenterNet](https://github.com/xingyizhou/CenterNet) for more detailed instructions)
+
+We support demo for image/ image folder, video, and webcam. 
+
+First, download the models (By default, [csp53_coco_val](https://drive.google.com/file/d/1aWD8CsE7mZ215NnvOozAHwi_8mPkvIRU/view?usp=sharing) for detection and put them in `CenterM2_ROOT/models/`.
+
+For object detection on images/ video, run:
+
+~~~
+python demo.py ctdet --demo /path/to/image/or/folder/or/video --load_model ../csp53_coco_val.pth
+~~~
+
+
+For webcam demo, run     
+
+~~~
+python demo.py ctdet --demo webcam --load_model ../models/csp53_coco_val.pth
+~~~
+
+You can add `--flip_test` and `--nms` for flip test.
+You can add `--debug 2` to visualize the heatmap outputs.
+
+
 ## Dataset preparation
 
 If you want to reproduce the results in the paper for benchmark evaluation and training, you will need to setup dataset.
@@ -141,29 +165,6 @@ If you want to reproduce the results in the paper for benchmark evaluation and t
   
   ~~~
   The `VOCdevkit` folder is needed to run the evaluation script from [faster rcnn](https://github.com/rbgirshick/py-faster-rcnn/blob/master/tools/reval.py).
-
-
-## Use CenterM2 (refer to [CenterNet](https://github.com/xingyizhou/CenterNet) for more detailed instructions)
-
-We support demo for image/ image folder, video, and webcam. 
-
-First, download the models (By default, [csp53_coco_val](https://drive.google.com/file/d/1aWD8CsE7mZ215NnvOozAHwi_8mPkvIRU/view?usp=sharing) for detection and put them in `CenterM2_ROOT/models/`.
-
-For object detection on images/ video, run:
-
-~~~
-python demo.py ctdet --demo /path/to/image/or/folder/or/video --load_model ../csp53_coco_val.pth
-~~~
-
-
-For webcam demo, run     
-
-~~~
-python demo.py ctdet --demo webcam --load_model ../models/csp53_coco_val.pth
-~~~
-
-You can add `--flip_test` and `--nms` for flip test.
-You can add `--debug 2` to visualize the heatmap outputs.
 
 
 ## Benchmark Evaluation and Training

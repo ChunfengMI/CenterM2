@@ -385,7 +385,7 @@ class PoseResNet(nn.Module):
         self.deconv_layer2 = self.deconv_layers[6:12]
         self.deconv_layer3 = self.deconv_layers[12:18]
 
-        # ASFF
+        # AFF
         self.weight_level_0 = add_conv(256 * block.expansion*2, 2, 1, 1, leaky=False)
         self.weight_level_1 = add_conv(128 * block.expansion*2, 2, 1, 1, leaky=False)
         self.weight_level_2 = add_conv(64 * block.expansion*2, 2, 1, 1, leaky=False)
@@ -528,7 +528,6 @@ class PoseResNet(nn.Module):
         x = x * (levels_weight[:, 0:1, :, :]) + x0 * (levels_weight[:, 1:, :, :])
 
         # print(levels_weight.size())
-        # x = (x*(levels_weight[:,0:1,:,:]*10) + r0*(levels_weight[:,1:2,:,:]*10) + r1*(levels_weight[:,2:3,:,:]*10) + r2*(levels_weight[:,3:,:,:])*10)
         x = (x + r0 + r1 + r2)
         ret = {}
         for head in self.heads:
